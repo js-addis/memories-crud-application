@@ -16,7 +16,7 @@ const App = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(currentId, getPosts());
+        dispatch(getPosts());
 
     }, [dispatch]);
     
@@ -30,11 +30,11 @@ const App = () => {
             </AppBar>
             <Grow in>
                 <Container>
-                    <Grid container justify="spage-between" alignItems="stretch" spacing={3}>
+                    <Grid container className={classes.mainContainer} justify="spage-between" alignItems="stretch" spacing={3}>
                         <Grid item xs={12} sm={7}>
                             <Posts setCurrentId={setCurrentId} />
                         </Grid>
-                        <Grid item xs={12} sm={4}>
+                        <Grid item xs={12} sm={5}>
                             <Form currentId={currentId} setCurrentId={setCurrentId} />
                         </Grid>
                     </Grid>
