@@ -26,7 +26,7 @@ const classes = useStyles();
             </div>
             <div className={classes.overlay2}>
                 <Button sx="{{ color : white }}" size="small" onClick={() => setCurrentId(post._id)} >
-                    <MoreHorizIcon fontSize="medium" />
+                    <MoreHorizIcon fontSize="medium"/>
                 </Button>
             </div>
             <div className={classes.details}>
